@@ -85,13 +85,20 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ hotelInfo }) => 
           {/* Left Column: Official Contact Details */}
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-white p-7 sm:p-8 rounded-2xl border border-neutral-200/80 shadow-xs space-y-6">
-              <div>
-                <h3 className="font-serif text-2xl font-bold text-[#143621] mb-1">
-                  {hotelInfo.name}
-                </h3>
-                <p className="text-xs text-[#A4813D] font-medium uppercase tracking-wider">
-                  {hotelInfo.slogan}
-                </p>
+              <div className="flex items-center gap-3.5">
+                <img
+                  src="/logo.jpg"
+                  alt="Countryside Hotel Logo"
+                  className="w-12 h-12 object-cover rounded-full border border-[#C5A059]/50 bg-black shadow-md shrink-0"
+                />
+                <div>
+                  <h3 className="font-serif text-2xl font-bold text-[#143621] mb-0.5">
+                    {hotelInfo.name} & Lounge
+                  </h3>
+                  <p className="text-xs text-[#A4813D] font-medium uppercase tracking-wider">
+                    {hotelInfo.slogan}
+                  </p>
+                </div>
               </div>
 
               {/* Physical Address */}

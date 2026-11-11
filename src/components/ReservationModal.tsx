@@ -117,13 +117,20 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
       >
         {/* Modal Top Header */}
         <div className="bg-[#143621] text-white p-6 flex items-center justify-between border-b border-[#C5A059]/30">
-          <div>
-            <div className="text-xs uppercase tracking-widest text-[#DFC794] font-semibold">
-              Countryside Hotel · Ogun State
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo.jpg"
+              alt="Countryside Hotel Logo"
+              className="w-11 h-11 object-cover rounded-full border border-[#C5A059]/50 bg-black shadow-md shrink-0"
+            />
+            <div>
+              <div className="text-xs uppercase tracking-widest text-[#DFC794] font-semibold">
+                Countryside Hotel & Lounge · Ogun State
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-white mt-0.5">
+                {confirmedReservation ? 'Reservation Request Received' : 'Reserve Your Accommodation'}
+              </h3>
             </div>
-            <h3 className="font-serif text-2xl font-bold text-white mt-1">
-              {confirmedReservation ? 'Reservation Request Received' : 'Reserve Your Accommodation'}
-            </h3>
           </div>
           <button
             type="button"

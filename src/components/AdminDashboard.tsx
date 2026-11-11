@@ -238,12 +238,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
         {/* Top Header */}
         <div className="bg-[#0B2214] px-6 py-4 border-b border-[#C5A059]/30 flex items-center justify-between shrink-0">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-[#C5A059] text-[#143621] flex items-center justify-center font-bold">
-              ❖
-            </div>
+            <img
+              src="/logo.jpg"
+              alt="Countryside Hotel & Lounge Logo"
+              className="w-10 h-10 object-cover rounded-full border border-[#C5A059]/50 bg-black shadow-md shrink-0"
+            />
             <div>
               <h2 className="font-serif text-lg sm:text-xl font-bold text-white tracking-wide">
-                Countryside Hotel · Management Console
+                Countryside Hotel & Lounge · Management Console
               </h2>
               <div className="text-xs text-[#DFC794]">
                 Ijoko Road, Ogun State · Established October 2024
@@ -276,10 +278,12 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
         {/* Auth Barrier Screen */}
         {!isAuthenticated ? (
           <div className="flex-1 flex items-center justify-center p-6 bg-neutral-950">
-            <div className="max-w-md w-full bg-neutral-900 border border-neutral-800 rounded-2xl p-8 shadow-2xl">
-              <div className="w-12 h-12 rounded-xl bg-[#143621] text-[#C5A059] flex items-center justify-center mx-auto mb-4 border border-[#C5A059]/40">
-                <Lock className="w-6 h-6" />
-              </div>
+            <div className="max-w-md w-full bg-neutral-900 border border-neutral-800 rounded-2xl p-8 shadow-2xl text-center">
+              <img
+                src="/logo.jpg"
+                alt="Countryside Hotel & Lounge Crest"
+                className="w-20 h-20 mx-auto mb-4 object-cover rounded-full border-2 border-[#C5A059] shadow-xl bg-black"
+              />
               <h3 className="font-serif text-2xl font-bold text-center text-white mb-1">
                 Hotel Administrator Login
               </h3>

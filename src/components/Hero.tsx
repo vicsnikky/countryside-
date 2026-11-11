@@ -43,9 +43,18 @@ export const Hero: React.FC<HeroProps> = ({
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white my-auto">
+        {/* Official Hotel & Lounge Crest Logo */}
+        <div className="mb-4 inline-block">
+          <img
+            src="/logo.jpg"
+            alt="Countryside Hotel & Lounge Crest"
+            className="w-24 h-24 sm:w-28 sm:h-28 mx-auto object-cover rounded-full border-2 border-[#C5A059] shadow-2xl bg-black"
+          />
+        </div>
+
         {/* Editorial Subtitle / Trust Kicker (no pills) */}
-        <div className="flex items-center justify-center gap-2 text-xs sm:text-sm tracking-widest uppercase text-[#DFC794] font-medium mb-4">
-          <span>{hotelInfo.name}</span>
+        <div className="flex items-center justify-center gap-2 text-xs sm:text-sm tracking-widest uppercase text-[#DFC794] font-medium mb-3">
+          <span>{hotelInfo.name} & Lounge</span>
           <span aria-hidden="true" className="text-[#C5A059]">·</span>
           <span>Ijoko Road, Ogun State</span>
           <span aria-hidden="true" className="text-[#C5A059]">·</span>

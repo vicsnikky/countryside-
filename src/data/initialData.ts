@@ -203,6 +203,13 @@ export const INITIAL_FACILITIES: FacilityItem[] = [
 
 export const INITIAL_GALLERY: GalleryItem[] = [
   {
+    id: 'gal-0',
+    title: 'Countryside Hotel & Lounge Official Crest',
+    category: 'Exterior',
+    image: '/logo.jpg',
+    caption: 'Official emblem and five-star hallmark of Countryside Hotel & Lounge in Ogun State, Nigeria.',
+  },
+  {
     id: 'gal-1',
     title: 'Countryside Hotel Facade & Porte-Cochere',
     category: 'Exterior',

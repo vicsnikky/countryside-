@@ -21,10 +21,14 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
           {/* Brand & Slogan Column */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="flex items-center gap-2">
-              <span className="text-xl text-[#C5A059]">❖</span>
+            <div className="flex items-center gap-3">
+              <img
+                src="/logo.jpg"
+                alt="Countryside Hotel & Lounge Logo"
+                className="w-12 h-12 object-cover rounded-full border border-[#C5A059]/50 bg-black shadow-md shrink-0"
+              />
               <span className="font-serif text-2xl font-bold tracking-tight text-white">
-                {hotelInfo.name}
+                {hotelInfo.name} & Lounge
               </span>
             </div>
             <p className="text-xs uppercase tracking-widest text-[#DFC794] font-semibold">

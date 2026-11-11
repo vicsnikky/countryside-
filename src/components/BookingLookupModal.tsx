@@ -85,13 +85,20 @@ export const BookingLookupModal: React.FC<BookingLookupModalProps> = ({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="bg-[#143621] text-white p-6 flex items-center justify-between border-b border-[#C5A059]/30">
-          <div>
-            <div className="text-xs uppercase tracking-widest text-[#DFC794] font-semibold">
-              Countryside Hotel
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo.jpg"
+              alt="Countryside Hotel Logo"
+              className="w-10 h-10 object-cover rounded-full border border-[#C5A059]/50 bg-black shadow-md shrink-0"
+            />
+            <div>
+              <div className="text-xs uppercase tracking-widest text-[#DFC794] font-semibold">
+                Countryside Hotel & Lounge
+              </div>
+              <h3 className="font-serif text-xl font-bold text-white mt-0.5">
+                Track Your Reservation
+              </h3>
             </div>
-            <h3 className="font-serif text-xl font-bold text-white mt-1">
-              Track Your Reservation
-            </h3>
           </div>
           <button
             type="button"

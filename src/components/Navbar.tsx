@@ -46,13 +46,20 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Bar 3-Zone Contract */}
           <div className="flex items-center justify-between gap-8">
-            {/* Zone 1: Single text element wordmark */}
+            {/* Zone 1: Brand Logo & Title */}
             <a
               href="#"
-              className="text-xl sm:text-2xl font-serif font-bold tracking-tight text-white hover:text-[#C5A059] transition-colors whitespace-nowrap shrink-0 flex items-center gap-2"
+              className="text-lg sm:text-xl md:text-2xl font-serif font-bold tracking-tight text-white hover:text-[#DFC794] transition-colors whitespace-nowrap shrink-0 flex items-center gap-3"
             >
-              <span className="text-[#C5A059]">❖</span>
-              <span>{hotelInfo.name}</span>
+              <img
+                src="/logo.jpg"
+                alt="Countryside Hotel & Lounge Crest"
+                className="h-10 w-10 sm:h-12 sm:w-12 object-cover rounded-full border border-[#C5A059]/50 bg-black shadow-md shrink-0"
+              />
+              <span className="flex flex-col">
+                <span className="leading-tight">{hotelInfo.name}</span>
+                <span className="text-[10px] tracking-widest uppercase font-sans font-medium text-[#DFC794]/90">Hotel & Lounge</span>
+              </span>
             </a>
 
             {/* Zone 2: Single-line text navigation links */}
